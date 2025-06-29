@@ -1,0 +1,173 @@
+:root {
+    --primary: #2196f3;
+    --primary-dark: #1976d2;
+    --primary-light: #bbdefb;
+    --accent: #03a9f4;
+    --text-primary: #212121;
+    --text-secondary: #757575;
+    --divider: #bdbdbd;
+}
+
+/* Override AdminLTE Colors */
+.navbar-primary {
+    background-color: var(--primary);
+}
+
+.sidebar-dark-primary {
+    background-color: #1565c0;
+}
+
+.card-primary.card-outline {
+    border-top: 3px solid var(--primary);
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-dark);
+    border-color: var(--primary-dark);
+}
+
+.text-primary {
+    color: var(--primary) !important;
+}
+
+/* Custom Health Theme Styles */
+.main-header {
+    background: linear-gradient(135deg, #1976d2 0%, #64b5f6 100%);
+    border: none;
+}
+
+.main-header .navbar-nav .nav-link {
+    color: #fff !important;
+}
+
+.content-wrapper {
+    background-color: #f8fafc;
+}
+
+.login-page {
+    background: linear-gradient(
+        135deg,
+        rgba(33, 150, 243, 0.1) 0%,
+        rgba(3, 169, 244, 0.1) 100%
+    );
+}
+
+.login-box .card {
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.small-box {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.small-box.bg-info {
+    background: linear-gradient(135deg, #2196f3 0%, #03a9f4 100%) !important;
+}
+
+.small-box.bg-success {
+    background: linear-gradient(135deg, #4caf50 0%, #8bc34a 100%) !important;
+}
+
+.small-box.bg-warning {
+    background: linear-gradient(135deg, #ff9800 0%, #ffc107 100%) !important;
+}
+
+.small-box.bg-danger {
+    background: linear-gradient(135deg, #f44336 0%, #ff5722 100%) !important;
+}
+
+.nav-pills .nav-link.active {
+    background-color: var(--primary);
+}
+
+.page-item.active .page-link {
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+
+.sidebar-dark-primary .nav-sidebar > .nav-item > .nav-link.active {
+    background-color: var(--primary);
+}
+
+/* Health Icons and Decorations */
+.health-icon {
+    position: relative;
+}
+
+.health-icon::before {
+    font-family: "Font Awesome 5 Free";
+    margin-right: 10px;
+}
+
+.health-pulse::before {
+    content: "\f484"; /* heartbeat icon */
+}
+
+.health-doctor::before {
+    content: "\f0f0"; /* user-md icon */
+}
+
+.health-hospital::before {
+    content: "\f0f8"; /* hospital icon */
+}
+
+/* Table Styling */
+.table thead th {
+    background-color: #e3f2fd;
+    color: var(--primary-dark);
+    border-bottom: 2px solid var(--primary-light);
+}
+
+.table-hover tbody tr:hover {
+    background-color: rgba(33, 150, 243, 0.05);
+}
+
+/* Form Controls */
+.form-control:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 0.2rem rgba(33, 150, 243, 0.25);
+}
+
+/* Custom Animations */
+.card,
+.btn,
+.nav-link {
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Health Dashboard Specific */
+.health-stats {
+    padding: 20px;
+    border-radius: 10px;
+    background: white;
+    margin-bottom: 20px;
+}
+
+.health-stats-title {
+    color: var(--primary-dark);
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .login-box {
+        width: 90%;
+    }
+}
