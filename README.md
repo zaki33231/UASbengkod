@@ -1,18 +1,24 @@
 🚀 Instalasi
-Clone repository:
+1. Clone repository:
 $ git clone [repository-url]
 $ cd laravel-12
-Install dependencies:
+
+2. Install dependencies:
 $ composer install
 $ npm install
-Copy file .env.example:
+
+3. Copy file .env.example:
 $ cp .env.example .env
-Generate application key:
+
+4. Generate application key:
 $ php artisan key:generate
-Setup database:
+
+5. Setup database:
 $ php artisan migrate
 $ php artisan db:seed
-Compile assets:
+
+6. Compile assets:
 $ npm run build
-Jalankan server:
+
+7. Jalankan server:
 $ php artisan serve
